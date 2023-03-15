@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>CHANGING THE COLOR OF THE IMAGE<\title>
+<script language="javascript">
+function mouse over image(img 2)
+{
+document.get ELEMENT BYID("img 2").style filter="grayscale(100%)";
+}
+function mouse out image(img 2)
+{
+document.get ELEMENT BYID("img 2").style filter="grayscale(0%)";
+}
+function dbiclick image(img 2)
+{
+img.style.filter="progid:DLimage transform microsoft.basic image(rotation=2)";
+}
+<\script>
+<\head>
+<body>
+<font color="meganta">
+<h2 align=center><U>javascript program for changing the color of the image using onmouseover event<\U><\h2>
+<\font>
+<br>
+<center>
+<img id ="img2"src"Autumn.Jpg"onmouseover="mouseoverimage(img2)"onmouse out="mouse out image(img2)"onclick="dbi click image(img2)"/>
+<\body>
+<\html>

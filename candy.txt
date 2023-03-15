@@ -1,0 +1,17 @@
+set serveroutput on
+DECLARE
+cid c.customer_id%TYPE;
+cname c.customer_name%TYPE;
+caddress c.customer_address%TYPE;
+BEGIN
+cid:=&customer_id;
+select customer_name,customer_address into cname,caddress from c where customer_id=cid;
+dbms_output.put_line('name:'||cname);
+dbms_output.put_line('address:'||caddress);
+EXCEPTION
+when no_data_found then
+dbms_output.put_line('no such customer!');
+when others then 
+dbms_output.put_line('error!');
+end;
+/	

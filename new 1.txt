@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util,*;
+class graph
+{
+private int u;
+private linked list<integer>adj[];//adjacency list
+graph(int v)
+{
+v=v;
+adj=new linked list[v];
+for(int i=0; i<v;++i)
+adj[i]=new linked list();
+}
+void add 
